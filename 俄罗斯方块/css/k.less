@@ -1,0 +1,419 @@
+*{
+    margin: 0;padding: 0;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.k{
+    width: 500px;
+    height: 600px;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    .inset{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    .main-box{
+           border-left: 1px solid #999;
+        border-bottom: 1px solid #999;
+        width: 300px;
+        height: 600px;float: left;
+    }
+    .main{
+        width: 300px;
+        height: 600px;
+     
+       
+        position: relative;
+       background:#fff url(../img/b.PNG) repeat;
+    }
+    
+    .opt-box{
+        float: right;
+        width: 198px;
+        height: 601px;
+        background: #eee;
+        text-align: center;
+        .title{
+             width: 150px;
+            height: 50px;
+            margin: 0 auto;
+         text-align: center;
+           background: #dfdfdf;
+           border: 1px solid #aaa;
+           border-top: none;
+           border-bottom-left-radius: 15px;
+           border-bottom-right-radius: 15px;
+        }
+        .next{
+            width: 150px;
+            height: 150px;
+           position: relative;
+            text-align: center;
+            margin: 0 auto;
+           margin-top: 30px;
+           background: #fff;
+           border: 1px solid #afafaf;
+        }
+        .opt{
+           
+           
+            width: 150px;
+            height:150px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background: #ddd;
+            border-radius: 4px;
+            .s{
+                width: 100%;
+                height: 28px;margin-top: 10px;
+                text-align: center;
+            }
+            select{
+                border: 1px solid #000;
+                outline: none;
+                
+            }
+            p{margin: 5px 0;}
+        .start,.stop{
+           height: 26px;
+           line-height: 26px;
+           padding: 0 13px;
+           color: #222;
+           cursor: pointer;
+           border-radius:5px;
+           border: 1px solid #666;
+           display: inline-block;
+            
+           &:active{
+               opacity: 0.5;
+           }
+           &:hover{
+               background: #000;
+               color: #fff;
+           }
+           &.active{
+                background: #000;
+               color: #fff;
+            }
+        }
+           
+        }
+        
+        
+    }
+    //
+    .block{
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        background: #000; 
+        box-shadow: inset 0 0 10px -3px #fff;
+    }
+    //
+    .o{
+        width: 0;
+        height: 0;
+        position: absolute;
+       display: inline-block;
+       
+       
+    }
+    //
+    .l{ 
+        width: 0;
+        height: 0;
+        display: inline-block;       
+        position: absolute;
+       
+        .i0{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .i{
+            position: absolute;
+            top: -30px;
+            left: 0;
+        }
+        .ii{
+            position: absolute;
+            top: 30px;
+            left: 0;
+            
+        }
+        .iii{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+        &.left{
+            .i{
+            position: absolute;
+            top: 0px;
+            left: -30px;
+            }
+            .ii{
+                position: absolute;
+                top: 0px;
+                left: 30px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: 30px;
+                top: -30px;
+            }
+        }
+        &.bottom{
+            .i{
+            position: absolute;
+            top: -30px;
+            left: 0px;
+            }
+            .ii{
+                position: absolute;
+                top: -30px;
+                left: -30px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: 0px;
+                top: 30px;
+            }
+        }
+        &.right{
+            .i{
+            position: absolute;
+            top: 0px;
+            left: -30px;
+            }
+            .ii{
+                position: absolute;
+                top: 30px;
+                left: -30px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: 30px;
+                top: 0px;
+            }
+        }
+    }
+    //oooo
+    .oooo{ 
+        width: 0;
+        height: 0;
+              
+        position: absolute; 
+        
+         .i{
+            position: absolute;
+            top: 0px;
+            left: 30px;
+        }
+        .ii{
+            position: absolute;
+            top: 30px;
+            left: 0;
+            
+        }
+        .iii{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+    }
+    //
+    .bar{
+         width: 0;
+        height: 0;        
+        position: absolute;
+         .i{
+            position: absolute;
+            top: 30px;
+            left: 0px;
+        }
+        .ii{
+            position: absolute;
+            top: 60px;
+            left: 0;
+            
+        }
+        .iii{
+            position: absolute;
+            left: 0px;
+            top: -30px;
+        }
+        &.left,&.right{
+               .i{
+                position: absolute;
+                top: 0px;
+                left: 30px;
+            }
+            .ii{
+                position: absolute;
+                top: 0px;
+                left: 60px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: -30px;
+                top: 0px;
+            } 
+        }
+        &.bottom{
+             .i{
+            position: absolute;
+            top: 30px;
+            left: 0px;
+        }
+        .ii{
+            position: absolute;
+            top: 60px;
+            left: 0;
+            
+        }
+        .iii{
+            position: absolute;
+            left: 0px;
+            top: -30px;
+        }
+        }
+    }
+    //小
+    .xiao{
+         width: 0;
+        height: 0;        
+        position: absolute;
+         .i{
+                position: absolute;
+                top: -30px;
+                left: 0px;
+            }
+            .ii{
+                position: absolute;
+                top: 30px;
+                left: 0px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: 0px;
+                top: 60px;
+            } 
+            .iiii{
+                position: absolute;
+                left: -30px;
+                top: 60px;
+            } 
+            .iiiii{
+                position: absolute;
+                left: -60px;
+                top: 0px;
+            }
+            .iiiiii{
+                position: absolute;
+                left: 60px;
+                top:0px;
+            }
+    }
+    //zhuang
+    .zhuang{
+         width: 0;
+        height: 0;        
+        position: absolute;
+         .i{
+                position: absolute;
+                top: -30px;
+                left: 0px;
+            }
+            .ii{
+                position: absolute;
+                top: 30px;
+                left: 0px;
+                
+            }
+            .iii{
+                position: absolute;
+                left: 0px;
+                top: 60px;
+            } 
+            .iiii{
+                position: absolute;
+                left: 0px;
+                top: 90px;
+            } 
+            .iiiii{
+                position: absolute;
+                left: -30px;
+                top: 0px;
+            }
+            .iiiiii{
+                position: absolute;
+                left: -30px;
+                top:60px;
+            }
+            .iiiiiii{
+                position: absolute;
+                left: 60px;
+                top:0px;
+            }
+             .iiiiiiii{
+                position: absolute;
+                left: 60px;
+                top:-30px;
+            }
+            ._i{
+                position: absolute;
+                left: 30px;
+                top:30px;
+            }
+             ._ii{
+                position: absolute;
+                left: 60px;
+                top:30px;
+            }
+             ._iii{
+                position: absolute;
+                left: 90px;
+                top:30px;
+            }
+             ._iiii{
+                position: absolute;
+                left: 30px;
+                top:90px;
+            }
+             ._iiiii{
+                position: absolute;
+                left: 60px;
+                top:90px;
+            }
+             ._iiiiii{
+                position: absolute;
+                left: 90px;
+                top:90px;
+            }
+            ._iiiiiii{
+                position: absolute;
+                left: 60px;
+                top:60px;
+            }
+    }
+}
+.fff{
+        width: 150px;
+        height: 90px;
+        background:#ccc;
+        margin: 0 auto;
+        p{
+             font-size: 14px;
+        }
+       
+    }

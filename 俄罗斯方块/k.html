@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/k.css"/>		
+	</head>
+	<body>
+		<div class="k">
+			<div class="main-box">
+				<div class="main">								
+					<!--<div class="l left" style="display:;top: 240px;left: 180px;">
+						<div class="inset">
+							<div class="block fallen i0"></div>
+							<div class="block fallen i"></div>
+							<div class="block fallen ii"></div>
+							<div class="block fallen iii"></div>
+						</div>						
+					</div>	-->	
+					<!--<div class="bar top" style="left:120px;top: -60px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+						</div>		
+					</div>-->
+					<!--<div class="xiao" style="display:none;left: 150px;top: -90px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+							<div class="block iiii"></div>
+							<div class="block iiiii"></div>
+							<div class="block iiiiii"></div>
+						</div>		
+					</div>-->
+					<!--<div class="zhuang" style="left: 120px;top: -120px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+							<div class="block iiii"></div>
+							<div class="block iiiii"></div>
+							<div class="block iiiiii"></div>
+							<div class="block iiiiiii"></div>
+							<div class="block iiiiiiii"></div>
+							<div class="block _i"></div>
+							<div class="block _ii"></div>
+							<div class="block _iii"></div>
+							<div class="block _iiii"></div>
+							<div class="block _iiiii"></div>
+							<div class="block _iiiiii"></div>
+							<div class="block _iiiiiii"></div>
+						</div>	-->
+				</div>
+			</div>
+			
+			<div class="opt-box" style="visibility: hidden;visibility: visible;">
+				<div class="title">
+					<p>连氏俄罗斯方块</p>
+					<p style="font-size: 14px;color: mediumorchid;">玩200分算你牛</p>
+				</div>
+				<div class="next">
+					<!--  一个方块-->
+					<div class="o" style="display:none;top: 60px;left: 60px;">
+						<div class="block"></div>
+					</div>
+					<!--   L 型拐角-->
+					<div class="l" style="display:none;top: 60px;left: 45px;">						
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+						</div>		
+					</div>
+					<!-- 田字块 -->
+					<div class="oooo" style="display:none;left: 45px;top: 45px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+						</div>		
+					</div>
+					<!--长条bar-->
+					<div class="bar" style="display:none;left: 50px;top: 45px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+						</div>		
+					</div>
+					<!--小字-->
+					<div class="xiao" style="display:none;left: 70px;top: 45px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+							<div class="block iiii"></div>
+							<div class="block iiiii"></div>
+							<div class="block iiiiii"></div>
+						</div>		
+					</div><!--壮字-->
+					<div class="zhuang" style="display:none;left: 30px;top: 30px;">
+						<div class="inset">
+							<div class="block i0"></div>
+							<div class="block i"></div>
+							<div class="block ii"></div>
+							<div class="block iii"></div>
+							<div class="block iiii"></div>
+							<div class="block iiiii"></div>
+							<div class="block iiiiii"></div>
+							<div class="block iiiiiii"></div>
+							<div class="block iiiiiiii"></div>
+							<div class="block _i"></div>
+							<div class="block _ii"></div>
+							<div class="block _iii"></div>
+							<div class="block _iiii"></div>
+							<div class="block _iiiii"></div>
+							<div class="block _iiiiii"></div>
+							<div class="block _iiiiiii"></div>
+						</div>		
+					</div>
+				</div>
+				<p>下一个</p>	
+				
+				<div class="opt">	
+					<p>得分：<span class="score">0</span>分</p>
+					<div style="width: 100%;height: 40px;clear: both;font-size: 12px;color: red;">玩的过程中可设置下落顺序随机哦</div>
+					<span>设置：</span>
+					<select class="sel" name="">
+						<option value="1">顺序</option>
+						<option value="0">随机</option>						
+					</select>
+					<div class="s">
+						<div class="start">start</div>
+						<div class="stop">stop</div>
+					</div>					
+				</div>
+				<div class="fff">
+					<p>说明：</p>
+					<p>
+						↑变换，↓快速下落<br />←左     →右，
+					</p>
+					<p>空格 : 暂停/开始</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/k.js" type="text/javascript" charset="utf-8"></script>	
+</html>

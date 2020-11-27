@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+	</head>
+	<body>
+		<div class="opt-box">
+			<h3>无敌贪吃蛇</h3>
+			
+			<p style="font-size: 12px ;">空格暂停，暂停后按方向键继续。</p>
+			<p style="font-size: 12px ;">可选择select框选择地图大小并点击start开始</p>
+			<p style="font-size: 12px ;">刷新浏览器从新开始</p>
+			
+			<span>类型</span>
+			<select class="select-1" name="">
+				<option value="small">small</option>
+				<option value="middle">middle</option>
+				<option value="big">big</option>
+			</select>
+			<button class="start">start</button>
+			<button class="stop">stop</button>
+			<div class="score">
+			<span>50</span>分
+			</div>
+		</div>		
+		<div class="main" style="display: none;">
+			<div class="snake-box">				
+				<div class="s s0"></div>
+				<div class="s s1"></div>
+				<div class="s s2"></div>
+				<div class="s s3"></div>
+				<div class="s s4"></div>				
+			</div>
+			<div class="o-box">
+				<!--
+				<div class="o"></div>
+				<div class="o"></div>
+				<div class="o"></div>
+				-->
+			</div>		
+		</div>
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/snake.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			new Snake("main", "select-1", "start", "score","stop");
+		</script>
+		
+	</body>
+</html>
